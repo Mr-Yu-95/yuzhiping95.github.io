@@ -2,6 +2,14 @@
 <search>
   <entry>
     <title><![CDATA[matlab备忘录1]]></title>
+    <url>%2F2019%2F05%2F12%2Ffilename%20-%20%E5%89%AF%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[保存变量使用save语句保存变量 保存工作空间所有的变量到data1.mat中1save data1 将工作空间的m变量保存到data2.mat中，如果工作空间没有m会报错。1save data2 m 将工作空间中的 m n p v 四个变量保存到data3.mat中，如果工作空间没有这四个变量中的一个也会报错。1save data3 m n p v 加载加载数据1x = load('e:\study\data.mat') 转换矩阵格式A代表要转换的矩阵，m,n代表二维数组中行和列。两种用法效果是一样的都是将A转换成m行n列的二维数组。12B=reshape(A,m,n)B=reshape(A,[m n]) 如果仅仅知道要转换后的行或者列也可以用占位符代替其中一个12B=reshape(A,m,[])B=reshape(A,[],n) 如果要转换成更高维数组在m,n后面加上数字即可如1B=reshape(A,3，2，2) reshape是按列存取数据的 矩阵求和对矩阵各列元素求和1b=sum(a) 对矩阵各行元素求和1b=sum(a，2) 对矩阵所有元素求和1d=sum(sum(a)) 保存txt文件1save('output.txt','data','-ascii') matlab 输出变量到txt文本时会采用科学计数的形式为了避免，可以先存放在excel，然后转为txt]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[matlab备忘录1]]></title>
     <url>%2F2019%2F05%2F12%2Ffilename%2F</url>
     <content type="text"><![CDATA[保存变量使用save语句保存变量 保存工作空间所有的变量到data1.mat中1save data1 将工作空间的m变量保存到data2.mat中，如果工作空间没有m会报错。1save data2 m 将工作空间中的 m n p v 四个变量保存到data3.mat中，如果工作空间没有这四个变量中的一个也会报错。1save data3 m n p v 加载加载数据1x = load('e:\study\data.mat') 转换矩阵格式A代表要转换的矩阵，m,n代表二维数组中行和列。两种用法效果是一样的都是将A转换成m行n列的二维数组。12B=reshape(A,m,n)B=reshape(A,[m n]) 如果仅仅知道要转换后的行或者列也可以用占位符代替其中一个12B=reshape(A,m,[])B=reshape(A,[],n) 如果要转换成更高维数组在m,n后面加上数字即可如1B=reshape(A,3，2，2) reshape是按列存取数据的 矩阵求和对矩阵各列元素求和1b=sum(a) 对矩阵各行元素求和1b=sum(a，2) 对矩阵所有元素求和1d=sum(sum(a)) 保存txt文件1save('output.txt','data','-ascii') matlab 输出变量到txt文本时会采用科学计数的形式为了避免，可以先存放在excel，然后转为txt]]></content>
       <tags>

@@ -376,6 +376,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/12/filename - 副本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu ZhiPing">
+      <meta itemprop="description" content="致力于用代码改变这个世界！">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="遇见西门">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/12/filename - 副本/" class="post-title-link" itemprop="url">matlab备忘录1</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-12 17:50:17" itemprop="dateCreated datePublished" datetime="2019-05-12T17:50:17+08:00">2019-05-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-10 19:59:05" itemprop="dateModified" datetime="2019-04-10T19:59:05+08:00">2019-04-10</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/2019/05/12/filename - 副本/" class="leancloud_visitors" data-flag-title="matlab备忘录1">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="保存变量"><a href="#保存变量" class="headerlink" title="保存变量"></a>保存变量</h2><p>使用save语句保存变量</p>
+<p> 保存工作空间所有的变量到data1.mat中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">save data1</span><br></pre></td></tr></table></figure></p>
+<p> 将工作空间的m变量保存到data2.mat中，如果工作空间没有m会报错。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">save data2 m</span><br></pre></td></tr></table></figure></p>
+<p>将工作空间中的 m n p v 四个变量保存到data3.mat中，如果工作空间没有这四个变量中的一个也会报错。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">save data3 m n p v</span><br></pre></td></tr></table></figure></p>
+<h2 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h2><p>加载数据<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x = load(<span class="string">'e:\study\data.mat'</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="转换矩阵格式"><a href="#转换矩阵格式" class="headerlink" title="转换矩阵格式"></a>转换矩阵格式</h2><p>A代表要转换的矩阵，m,n代表二维数组中行和列。<br>两种用法效果是一样的都是将A转换成m行n列的二维数组。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B=reshape(A,m,n)</span><br><span class="line">B=reshape(A,[m n])</span><br></pre></td></tr></table></figure></p>
+<p>如果仅仅知道要转换后的行或者列也可以用占位符代替其中一个<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">B=reshape(A,m,[])</span><br><span class="line">B=reshape(A,[],n)</span><br></pre></td></tr></table></figure></p>
+<p>如果要转换成更高维数组在m,n后面加上数字即可如<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">B=reshape(A,3，2，2)</span><br></pre></td></tr></table></figure></p>
+<p>reshape是按列存取数据的</p>
+<h2 id="矩阵求和"><a href="#矩阵求和" class="headerlink" title="矩阵求和"></a>矩阵求和</h2><p>对矩阵各列元素求和<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b=sum(a)</span><br></pre></td></tr></table></figure></p>
+<p>对矩阵各行元素求和<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b=sum(a，<span class="number">2</span>)</span><br></pre></td></tr></table></figure></p>
+<p>对矩阵所有元素求和<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d=sum(sum(a))</span><br></pre></td></tr></table></figure></p>
+<h2 id="保存txt文件"><a href="#保存txt文件" class="headerlink" title="保存txt文件"></a>保存txt文件</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">save(<span class="string">'output.txt'</span>,<span class="string">'data'</span>,<span class="string">'-ascii'</span>)</span><br></pre></td></tr></table></figure>
+<p>matlab 输出变量到txt文本时会采用科学计数的形式为了避免，可以先存放在excel，然后转为txt</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/12/filename/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -584,7 +763,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1226,6 +1405,8 @@
 
   
   
+    
+      
     
       
     
