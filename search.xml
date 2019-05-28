@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title><![CDATA[matlab备忘录1]]></title>
     <url>%2F2019%2F05%2F27%2F%E8%BF%99%E6%98%AF%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[这是一级标题$$\begin{array}{c}{\min _{G} \max _{D_{i}} E_{f^{} \sim \operatorname{prior}(f)}\left[\log D_{i}\left(f^{}\right)\right]+} \ {E_{x \sim p_{d}(x)}\left[\log \left(1-D_{i}\left(G_{e n c}(x)\right)\right)\right]}\end{array}$$ 科技论文的写作目的是交流学术思想和科学发现。 明确知道为什么写这篇文章，文章为谁而写，要表述什么，读者群是哪些人，要告诉读者何种信息，要有清晰的概念。 every single word that i publish i write at least six times. Paul Halmos 摘要的目的是简要告诉读者这篇文章的主要内容，要研究的问题，有什么新的结论或者发现。 引言应对摘要做出更详细的说明和拓展。]]></content>
+    <content type="text"><![CDATA[这是一级标题 \begin{array}{c}{\min _{G} \max _{D_{i}} E_{f^{*} \sim \operatorname{prior}(f)}\left[\log D_{i}\left(f^{*}\right)\right]+} \\ {E_{x \sim p_{d}(x)}\left[\log \left(1-D_{i}\left(G_{e n c}(x)\right)\right)\right]}\end{array}科技论文的写作目的是交流学术思想和科学发现。 明确知道为什么写这篇文章，文章为谁而写，要表述什么，读者群是哪些人，要告诉读者何种信息，要有清晰的概念。 every single word that i publish i write at least six times. Paul Halmos 摘要的目的是简要告诉读者这篇文章的主要内容，要研究的问题，有什么新的结论或者发现。 引言应对摘要做出更详细的说明和拓展。]]></content>
+      <tags>
+        <tag>matlab</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[《人间失格》摘录]]></title>

@@ -396,7 +396,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/05/27/这是一级标题/" class="post-title-link" itemprop="url">未命名</a>
+                <a href="/2019/05/27/这是一级标题/" class="post-title-link" itemprop="url">matlab备忘录1</a>
               
             
           </h1>
@@ -438,7 +438,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-26 20:57:10" itemprop="dateModified" datetime="2019-05-26T20:57:10+08:00">2019-05-26</time>
+                <time title="修改时间：2019-05-28 10:36:30" itemprop="dateModified" datetime="2019-05-28T10:36:30+08:00">2019-05-28</time>
               
             
           </span>
@@ -452,7 +452,7 @@
 
           
           
-            <span id="/2019/05/27/这是一级标题/" class="leancloud_visitors" data-flag-title>
+            <span id="/2019/05/27/这是一级标题/" class="leancloud_visitors" data-flag-title="matlab备忘录1">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -477,7 +477,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">575</span>
+                <span title="本文字数">597</span>
               
 
               
@@ -514,7 +514,8 @@
         
           
             <p>
-              这是一级标题$$\begin{array}{c}{\min _{G} \max _{D_{i}} E_{f^{} \sim \operatorname{prior}(f)}\left[\log D_{i}\left(f^{}\right)\right]+} \ {E_{x \sim p_{d}(x)
+              这是一级标题
+\begin{array}{c}{\min _{G} \max _{D_{i}} E_{f^{*} \sim \operatorname{prior}(f)}\left[\log D_{i}\left(f^{*}\right)\right]+} \\ {E_{x \sim p_{d}(
               ...
             </p>
           <!--noindex-->
@@ -1689,6 +1690,8 @@
   
     
       
+        
+      
     
       
     
@@ -1696,6 +1699,50 @@
     
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+    MathJax.Ajax.config.path['mhchem'] = '//cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0';
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+        extensions: ['[mhchem]/mhchem.js'],
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    
   
 
 
