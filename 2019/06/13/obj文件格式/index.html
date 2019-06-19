@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="obj文件格式obj文件中，几何实体必须以”V”、”VT”、”VN”或”F”开头，一个几何实体占据一行。所以在解析obj文件的时候，若一行不是以V\VT\VN\F这几个字母开头，就可以忽略掉这行。 下面是几个字母代表的几何实体类型： V：代表顶点。格式为V X Y Z，V后面的X Y Z表示三个顶点坐标。浮点型 VT：表示纹理坐标。上面的立方体有24个纹理坐标，因为每个三角形面的三个顶点，都需要指">
+  <meta name="description" content="obj文件格式OBJ是一种标准的3D模型文件格式；软件：3dsMax，LightWare，Maya都支持OBJ文件的读写； OBJ是以纯文本的形式存储了模型的顶点、法线和纹理坐标和材质使用信息； 格式：前缀参数1 参数2 参数3…….     前缀 说明     v 表示本行指定一个顶点 此前缀后跟着3个单精度浮点数，分别表示顶点的x，y，z坐标值   vt 表示本行指定一个纹理坐标 此前缀后跟着">
 <meta name="keywords" content="三维基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="obj文件格式">
 <meta property="og:url" content="http://yoursite.com/2019/06/13/obj文件格式/index.html">
 <meta property="og:site_name" content="遇见西门">
-<meta property="og:description" content="obj文件格式obj文件中，几何实体必须以”V”、”VT”、”VN”或”F”开头，一个几何实体占据一行。所以在解析obj文件的时候，若一行不是以V\VT\VN\F这几个字母开头，就可以忽略掉这行。 下面是几个字母代表的几何实体类型： V：代表顶点。格式为V X Y Z，V后面的X Y Z表示三个顶点坐标。浮点型 VT：表示纹理坐标。上面的立方体有24个纹理坐标，因为每个三角形面的三个顶点，都需要指">
+<meta property="og:description" content="obj文件格式OBJ是一种标准的3D模型文件格式；软件：3dsMax，LightWare，Maya都支持OBJ文件的读写； OBJ是以纯文本的形式存储了模型的顶点、法线和纹理坐标和材质使用信息； 格式：前缀参数1 参数2 参数3…….     前缀 说明     v 表示本行指定一个顶点 此前缀后跟着3个单精度浮点数，分别表示顶点的x，y，z坐标值   vt 表示本行指定一个纹理坐标 此前缀后跟着">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-13T07:09:17.005Z">
+<meta property="og:updated_time" content="2019-06-19T02:57:17.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="obj文件格式">
-<meta name="twitter:description" content="obj文件格式obj文件中，几何实体必须以”V”、”VT”、”VN”或”F”开头，一个几何实体占据一行。所以在解析obj文件的时候，若一行不是以V\VT\VN\F这几个字母开头，就可以忽略掉这行。 下面是几个字母代表的几何实体类型： V：代表顶点。格式为V X Y Z，V后面的X Y Z表示三个顶点坐标。浮点型 VT：表示纹理坐标。上面的立方体有24个纹理坐标，因为每个三角形面的三个顶点，都需要指">
+<meta name="twitter:description" content="obj文件格式OBJ是一种标准的3D模型文件格式；软件：3dsMax，LightWare，Maya都支持OBJ文件的读写； OBJ是以纯文本的形式存储了模型的顶点、法线和纹理坐标和材质使用信息； 格式：前缀参数1 参数2 参数3…….     前缀 说明     v 表示本行指定一个顶点 此前缀后跟着3个单精度浮点数，分别表示顶点的x，y，z坐标值   vt 表示本行指定一个纹理坐标 此前缀后跟着">
 
 
 
@@ -420,12 +420,24 @@
                 
               
 
-              <time title="创建时间：2019-06-13 14:59:58 / 修改时间：15:09:17" itemprop="dateCreated datePublished" datetime="2019-06-13T14:59:58+08:00">2019-06-13</time>
+              <time title="创建时间：2019-06-13 14:59:58" itemprop="dateCreated datePublished" datetime="2019-06-13T14:59:58+08:00">2019-06-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-06-19 10:57:17" itemprop="dateModified" datetime="2019-06-19T10:57:17+08:00">2019-06-19</time>
               
             
           </span>
@@ -464,7 +476,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">594</span>
+                <span title="本文字数">5.2k</span>
               
 
               
@@ -478,7 +490,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">5 分钟</span>
               
             </div>
           
@@ -498,7 +510,81 @@
       
 
       
-        <h2 id="obj文件格式"><a href="#obj文件格式" class="headerlink" title="obj文件格式"></a>obj文件格式</h2><p>obj文件中，几何实体必须以”V”、”VT”、”VN”或”F”开头，一个几何实体占据一行。所以在解析obj文件的时候，若一行不是以V\VT\VN\F这几个字母开头，就可以忽略掉这行。</p>
+        <h2 id="obj文件格式"><a href="#obj文件格式" class="headerlink" title="obj文件格式"></a>obj文件格式</h2><p>OBJ是一种标准的3D模型文件格式；软件：3dsMax，LightWare，Maya都支持OBJ文件的读写；</p>
+<p>OBJ是以纯文本的形式存储了模型的顶点、法线和纹理坐标和材质使用信息；</p>
+<p>格式：前缀参数1 参数2 参数3…….</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v</td>
+<td>表示本行指定一个顶点 此前缀后跟着3个单精度浮点数，分别表示顶点的x，y，z坐标值</td>
+</tr>
+<tr>
+<td>vt</td>
+<td>表示本行指定一个纹理坐标 此前缀后跟着两个单精度浮点数，分别表示此纹理坐标的u，v值</td>
+</tr>
+<tr>
+<td>vn</td>
+<td>表示本行指定一个法线向量 此前缀后跟着3个单精度浮点数，分别表示顶点法向量x，y，z坐标值</td>
+</tr>
+<tr>
+<td>f</td>
+<td>表示本行指定一个表面（Face） 此前缀后面的数据见“面的格式说明”</td>
+</tr>
+<tr>
+<td>usemtl</td>
+<td>此前缀后只跟着一个参数。该参数指定了从此行之后到下一个以usemtl开头的行之间的所有表面所使用的材质名称。该材质可以在此OBJ文件所附属的MTL文件中找到具体信息。</td>
+</tr>
+<tr>
+<td>mtllib</td>
+<td>此前缀后只跟着一个参数，该参数指定了此OBJ文件所使用的材质库文件（*.mtl）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>面的格式说明：</p>
+<p>f  顶点坐标索引 / 纹理坐标索引 / 顶点法向索引</p>
+<p>f Vertex / Texture / Normal</p>
+<p>其中，纹理坐标索引/顶点法向索引可以为空；</p>
+<p>f 1 2 3 等同于 f 1// 2// 3//</p>
+<p>f 1/3 2/5 3/4 （顶点法向索引为空）</p>
+<p>f 1/3/4 2/5/6 3/4/2</p>
+<p>f 1//4 2//6 3//2</p>
+<p>obj格式对纹理的支持是通过关键字mtllib指定的；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">newmtl blinn1SG </span><br><span class="line">illum 4 </span><br><span class="line">Ka 0.2 0.2 0.2 </span><br><span class="line">Kd 1 1 1 </span><br><span class="line">Ks 0.2 0.2 0.2 </span><br><span class="line">Tf 1.00 1.00 1.00 </span><br><span class="line">map_Kd carp.bmp</span><br></pre></td></tr></table></figure>
+<p>Ka——物体材质中环境光的颜色</p>
+<p>Kd——物体材质中漫反射光的颜色</p>
+<p>Ks——物体材质中镜面光颜色</p>
+<p>map_Kd——纹理图像的路径</p>
+<p>三角网格的数据结构</p>
+<p>三角网格的数据由几何和连接关系组成；</p>
+<p>几何包括顶点的x，y，z坐标及顶点的法向量等；</p>
+<p>连接关系即三角网格是如何连在一块的；</p>
+<p>常用的三角网格数据结构包括：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">顶点-边（Vertex-Edge）</span><br><span class="line">顶点-面（Vertex-Face）</span><br><span class="line">邻接矩阵 和 邻接表</span><br><span class="line">顶点-边-面</span><br><span class="line">半边结构（half Edge）</span><br></pre></td></tr></table></figure>
+<p>纹理数据</p>
+<p>obj文件中不但包含顶点几何坐标，还可以指定纹理数据，mtllib命令指定了材质属性的文件，材质属性文件中可以指定纹理图像所在的文件。纹理的显示包含三个步骤：</p>
+<p>1、生成纹理数据</p>
+<p>2、将纹理数据载入纹理内存</p>
+<p>3、将纹理数据映射到物体表面</p>
+<p>mtl 格式文件</p>
+<p>newmtl name #name为材质名称</p>
+<p>Ns exponent #exponent指定材质的反射指数，定义了反射高光度</p>
+<p>Ka r g b #环境光反射，g和b两参数是可选的，如果只指定了r的值，则g和b的值都等于r的值</p>
+<p>Kd r g b #漫反射</p>
+<p>Ks r g b #镜面光反射</p>
+<p>Ka Kd Ks 都还有其他两种格式，可查阅其他资料：</p>
+<h1 id="Kd-spectral-file-rfl-factor"><a href="#Kd-spectral-file-rfl-factor" class="headerlink" title="Kd spectral file.rfl factor"></a>Kd spectral file.rfl factor</h1><h1 id="Kd-xyz-x-y-z"><a href="#Kd-xyz-x-y-z" class="headerlink" title="Kd xyz x y z"></a>Kd xyz x y z</h1><p>map_Kd picture.png #固有纹理贴图</p>
+<p>map_Ka picture1.png #阴影纹理贴图</p>
+<p>map_Ks picture2.png #高光纹理贴图 illum 2</p>
+<h1 id="光照模型"><a href="#光照模型" class="headerlink" title="光照模型"></a>光照模型</h1><h1 id="光照模型属性如下："><a href="#光照模型属性如下：" class="headerlink" title="光照模型属性如下："></a>光照模型属性如下：</h1><h1 id="0-色彩开，阴影色关"><a href="#0-色彩开，阴影色关" class="headerlink" title="0. 色彩开，阴影色关"></a>0. 色彩开，阴影色关</h1><h1 id="1-色彩开，阴影色开"><a href="#1-色彩开，阴影色开" class="headerlink" title="1. 色彩开，阴影色开"></a>1. 色彩开，阴影色开</h1><h1 id="2-高光开"><a href="#2-高光开" class="headerlink" title="2. 高光开"></a>2. 高光开</h1><h1 id="3-反射开，光线追踪开"><a href="#3-反射开，光线追踪开" class="headerlink" title="3. 反射开，光线追踪开"></a>3. 反射开，光线追踪开</h1><h1 id="4-透明：-玻璃开-反射：光线追踪开"><a href="#4-透明：-玻璃开-反射：光线追踪开" class="headerlink" title="4. 透明： 玻璃开 反射：光线追踪开"></a>4. 透明： 玻璃开 反射：光线追踪开</h1><h1 id="5-反射：菲涅尔衍射开，光线追踪开"><a href="#5-反射：菲涅尔衍射开，光线追踪开" class="headerlink" title="5. 反射：菲涅尔衍射开，光线追踪开"></a>5. 反射：菲涅尔衍射开，光线追踪开</h1><h1 id="6-透明：折射开-反射：菲涅尔衍射关，光线追踪开"><a href="#6-透明：折射开-反射：菲涅尔衍射关，光线追踪开" class="headerlink" title="6. 透明：折射开 反射：菲涅尔衍射关，光线追踪开"></a>6. 透明：折射开 反射：菲涅尔衍射关，光线追踪开</h1><h1 id="7-透明：折射开-反射：菲涅尔衍射开，光线追踪开"><a href="#7-透明：折射开-反射：菲涅尔衍射开，光线追踪开" class="headerlink" title="7. 透明：折射开 反射：菲涅尔衍射开，光线追踪开"></a>7. 透明：折射开 反射：菲涅尔衍射开，光线追踪开</h1><h1 id="8-反射开，光线追踪关"><a href="#8-反射开，光线追踪关" class="headerlink" title="8. 反射开，光线追踪关"></a>8. 反射开，光线追踪关</h1><h1 id="9-透明：-玻璃开-反射：光线追踪关"><a href="#9-透明：-玻璃开-反射：光线追踪关" class="headerlink" title="9. 透明： 玻璃开 反射：光线追踪关"></a>9. 透明： 玻璃开 反射：光线追踪关</h1><h1 id="10-投射阴影于不可见表面"><a href="#10-投射阴影于不可见表面" class="headerlink" title="10. 投射阴影于不可见表面"></a>10. 投射阴影于不可见表面</h1><p>obj文件中，几何实体必须以”V”、”VT”、”VN”或”F”开头，一个几何实体占据一行。所以在解析obj文件的时候，若一行不是以V\VT\VN\F这几个字母开头，就可以忽略掉这行。</p>
 <p>下面是几个字母代表的几何实体类型：</p>
 <p>V：代表顶点。格式为V X Y Z，V后面的X Y Z表示三个顶点坐标。浮点型</p>
 <p>VT：表示纹理坐标。上面的立方体有24个纹理坐标，因为每个三角形面的三个顶点，都需要指定一个纹理坐标。格式为VT TU TV。浮点型</p>
@@ -794,7 +880,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#obj文件格式"><span class="nav-number">1.</span> <span class="nav-text">obj文件格式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#obj文件格式"><span class="nav-number">1.</span> <span class="nav-text">obj文件格式</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Kd-spectral-file-rfl-factor"><span class="nav-number"></span> <span class="nav-text">Kd spectral file.rfl factor</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Kd-xyz-x-y-z"><span class="nav-number"></span> <span class="nav-text">Kd xyz x y z</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#光照模型"><span class="nav-number"></span> <span class="nav-text">光照模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#光照模型属性如下："><span class="nav-number"></span> <span class="nav-text">光照模型属性如下：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0-色彩开，阴影色关"><span class="nav-number"></span> <span class="nav-text">0. 色彩开，阴影色关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-色彩开，阴影色开"><span class="nav-number"></span> <span class="nav-text">1. 色彩开，阴影色开</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-高光开"><span class="nav-number"></span> <span class="nav-text">2. 高光开</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-反射开，光线追踪开"><span class="nav-number"></span> <span class="nav-text">3. 反射开，光线追踪开</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-透明：-玻璃开-反射：光线追踪开"><span class="nav-number"></span> <span class="nav-text">4. 透明： 玻璃开 反射：光线追踪开</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-反射：菲涅尔衍射开，光线追踪开"><span class="nav-number"></span> <span class="nav-text">5. 反射：菲涅尔衍射开，光线追踪开</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-透明：折射开-反射：菲涅尔衍射关，光线追踪开"><span class="nav-number"></span> <span class="nav-text">6. 透明：折射开 反射：菲涅尔衍射关，光线追踪开</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-透明：折射开-反射：菲涅尔衍射开，光线追踪开"><span class="nav-number"></span> <span class="nav-text">7. 透明：折射开 反射：菲涅尔衍射开，光线追踪开</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-反射开，光线追踪关"><span class="nav-number"></span> <span class="nav-text">8. 反射开，光线追踪关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-透明：-玻璃开-反射：光线追踪关"><span class="nav-number"></span> <span class="nav-text">9. 透明： 玻璃开 反射：光线追踪关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-投射阴影于不可见表面"><span class="nav-number"></span> <span class="nav-text">10. 投射阴影于不可见表面</span></a></li></div>
             
 
           </div>
@@ -836,7 +922,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">6k</span>
   
 
   
@@ -847,7 +933,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="站点阅读时长">6 分钟</span>
   
 </div>
 
