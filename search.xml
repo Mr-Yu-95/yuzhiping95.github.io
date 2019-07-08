@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ubuntu-caffe相关问题]]></title>
+    <url>%2F2019%2F07%2F08%2Fubuntu%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[科研论文写作ubuntu-caffe相关问题深度学习服务器环境搭建详细版：ubuntu16.04+cuda8+caffe+anaconda+tensorflow+共享 caffe一般不支持python3.5以上版本，将环境换成python2.7. 安装tensorflow-gpu记得查阅对应的版本要求 cuda10在linux版本中 只能装1.13.1 的tensorflow. sudo pip install tensorflow-gpu==1.13.1 编写python时，当使用中文输出或者注释脚本，会提示syntaxerror non ascall character 原因：python的默认编码方式ascll ，而python文件中使用了中文等非英语字符。 解决办法 在python文件的最开始一行，加入一句 #coding=UTF-8 或者 #-*-coding：UTF-8-*- python import caffe 出现开Ubuntu满屏刷错，只能重装显卡。 双系统win7+ubuntu时，无法识别win7的解决办法：预装win7，但是在安装ubuntu时，显示500G为空盘，此电脑没有安装任何系统 解决办法：进入try ubuntu后 在terminal中输入： sudo dd if=/dev/zero of=/dev/sda bs=1 count=8 seek=512 重新“install ubuntu” 就能够解决问题。 电脑开机显示error：no such partition entering rescue mode的解决办法 原因分析：由于安装了win7和linux双系统，linux由于出现问题删除了该分区导致无法正常引导win7启动。 解决办法 利用大白菜制作U盘启动器 引导分区重建。]]></content>
+      <tags>
+        <tag>备忘录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[愿你也成为某个人的小朋友]]></title>
     <url>%2F2019%2F07%2F07%2F%E9%9A%8F%E6%89%8B%E6%91%98%E5%BD%956%2F</url>
     <content type="text"><![CDATA[愿你也成为某个人的小朋友即使你已经是全世界的大人了，但依旧还是我一个人的小朋友！ 知道你能够成为独当一面的大人，却仍然愿意把你当小朋友看待的人一定是很爱你的，曾有句口谈禅说，无论你多大了，在某个人眼里永远是小朋友，即使不说出来，也都在心里。现在才明白这句话的可贵。 谁不愿意和懂事理智不给人添麻烦的成年人相处啊，是因为爱你，才允许你不用在我面前也那么辛苦的扮演一个大人该有的样子。给一个人做小朋友的特权，其实是分量很重很重的爱意。 朋友之间也是，能够包容你偶尔不理智不成熟的一面的朋友一定是你宝贵的朋友，愿意陪你幼稚，愿意在面对问题的时候，站在你这边，和你一起想办法，这些都是太可贵的情谊。 这些偏爱从来都不是人家该你的，而是你真的运气很好，遇到了千金不换的朋友。 人总是要长大的，但偶尔发现有人愿意把你当做小朋友一样去爱，是一种奢侈的幸福。 优秀而努力大概如下：自律到极致，每天完成目标，按时作息，控制饮食，皮肤好，身材棒，脑子聪明，家境好。走路都比普通人快，争分夺秒。做事效率高，不拖延事情，已经很成功还是觉得自己一般。]]></content>
