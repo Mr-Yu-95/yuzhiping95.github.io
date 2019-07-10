@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于读书]]></title>
+    <url>%2F2019%2F07%2F09%2F%E9%9A%8F%E6%89%8B%E6%91%98%E5%BD%957%2F</url>
+    <content type="text"><![CDATA[关于读书你现在的气质里，藏着你读过的书，你走过的路，你爱过的人。 读书不是说书本本身有什么了不起，而是读书这个行为意味着你没有完全认同这个现实和现世，你还有追求，你还在努力，你还在寻求另一种可能，另一种生活方式，读书就是为了不遇到不想遇到的人，读书就是为了成为有温度懂情调会思考的人。 关于旅行一个人去过多少地方，见过多少人，决定了他思维的宽度和内心的包容程度，如果你去过西藏，就会对生死有不同的看法，如果你从欧洲游历一圈，你就不会觉得失去谁就失去全世界，如果你在美国住上一段时间，你就不会再有狭隘的反美情绪或者狂热的西方崇拜。懂得葡萄酒的产地和年份，喝的出普洱的好与坏，说得出莫奈和梵高的区别，了解各国不同的恋情和安乐死的法案，不是为了在和别人聊天时装逼，而是在任何时候你都不会过于大惊小怪，泡夜店，纹身，打洞，看似很酷，其实这些事情一点难度都没有，只是你愿意去做就能做到，更酷的是那些不容易做到的事，比如看书，健身，赚钱，用心爱一个人。 关于友情不占朋友的便宜，是一个人对待友情的顶级修养，我是爱交朋友，但我从来不供祖宗。 关于学习我用功读书，不是因为我要跟别人比成绩，而是因为，我希望我将来会拥有选择的权利，选择有意义，有时间的工作，而不是被迫谋生。 关于道歉“人家都道歉了，你就原谅他吧”这种说法算是很恶毒的绑架了。道歉仅仅是犯错人的一种态度，绝不该理所应当的就得到原谅。原谅与否，只有受到伤害的人自己可以决定。]]></content>
+      <tags>
+        <tag>摘抄</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ubuntu-caffe相关问题]]></title>
     <url>%2F2019%2F07%2F08%2Fubuntu%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[科研论文写作ubuntu-caffe相关问题深度学习服务器环境搭建详细版：ubuntu16.04+cuda8+caffe+anaconda+tensorflow+共享 caffe一般不支持python3.5以上版本，将环境换成python2.7. 安装tensorflow-gpu记得查阅对应的版本要求 cuda10在linux版本中 只能装1.13.1 的tensorflow. sudo pip install tensorflow-gpu==1.13.1 编写python时，当使用中文输出或者注释脚本，会提示syntaxerror non ascall character 原因：python的默认编码方式ascll ，而python文件中使用了中文等非英语字符。 解决办法 在python文件的最开始一行，加入一句 #coding=UTF-8 或者 #-*-coding：UTF-8-*- python import caffe 出现开Ubuntu满屏刷错，只能重装显卡。 双系统win7+ubuntu时，无法识别win7的解决办法：预装win7，但是在安装ubuntu时，显示500G为空盘，此电脑没有安装任何系统 解决办法：进入try ubuntu后 在terminal中输入： sudo dd if=/dev/zero of=/dev/sda bs=1 count=8 seek=512 重新“install ubuntu” 就能够解决问题。 电脑开机显示error：no such partition entering rescue mode的解决办法 原因分析：由于安装了win7和linux双系统，linux由于出现问题删除了该分区导致无法正常引导win7启动。 解决办法 利用大白菜制作U盘启动器 引导分区重建。]]></content>
+    <content type="text"><![CDATA[ubuntu-caffe相关问题深度学习服务器环境搭建详细版：ubuntu16.04+cuda8+caffe+anaconda+tensorflow+共享 caffe一般不支持python3.5以上版本，将环境换成python2.7. 安装tensorflow-gpu记得查阅对应的版本要求 cuda10在linux版本中 只能装1.13.1 的tensorflow. sudo pip install tensorflow-gpu==1.13.1 编写python时，当使用中文输出或者注释脚本，会提示syntaxerror non ascall character 原因：python的默认编码方式ascll ，而python文件中使用了中文等非英语字符。 解决办法 在python文件的最开始一行，加入一句 #coding=UTF-8 或者 #-*-coding：UTF-8-*- python import caffe 出现开Ubuntu满屏刷错，只能重装显卡。 双系统win7+ubuntu时，无法识别win7的解决办法：预装win7，但是在安装ubuntu时，显示500G为空盘，此电脑没有安装任何系统 解决办法：进入try ubuntu后 在terminal中输入： sudo dd if=/dev/zero of=/dev/sda bs=1 count=8 seek=512 重新“install ubuntu” 就能够解决问题。 电脑开机显示error：no such partition entering rescue mode的解决办法 原因分析：由于安装了win7和linux双系统，linux由于出现问题删除了该分区导致无法正常引导win7启动。 解决办法 利用大白菜制作U盘启动器 引导分区重建。]]></content>
       <tags>
         <tag>备忘录</tag>
       </tags>
